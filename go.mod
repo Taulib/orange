@@ -1,4 +1,4 @@
-module github.com/D3nnisA/orange
+module github.com/Taulib/Orange.git
 
 go 1.19
 
