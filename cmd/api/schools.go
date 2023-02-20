@@ -14,7 +14,7 @@ func (app *application) createSchoolHandler(w http.ResponseWriter, r *http.Reque
 func (app *application) showSchoolHandler(w http.ResponseWriter, r *http.Request) {
 	id, err := app.readIDParams(r)
 	if err != nil {
-		http.NotFound(r)
+		http.NotFound(w, r)
 		return
 	}
 	fmt.Fprintf(w, "show details of schools %d\n", id)
